@@ -11,6 +11,7 @@ public class MainClass {
 		int n2 = sc.nextInt();
 		
 		System.out.println(Soma(n1,n2));
+		System.out.println(Mult(n1,n2));
 		
 		sc.close();
 	}
@@ -20,4 +21,8 @@ public class MainClass {
 		return n1 + n2;
 	}
 
+	public static double Mult(int n1, int n2) 
+	{
+		return n1 * n2;
+	}
 }
