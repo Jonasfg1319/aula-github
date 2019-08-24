@@ -1,28 +1,69 @@
 package program;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    
-		Scanner sc = new Scanner(System.in);
+	    
+			Scanner sc = new Scanner(System.in);
+			SistemasNumericos sis = new SistemasNumericos();
+			 
+			
+			System.out.println("Qual numero você quer converter?");
+			 
+			int s1 = sc.nextInt();
+			
+			System.out.println("qual a base atual dele?");
+			 
+			int ba = sc.nextInt();
+			
+			System.out.println("Para qual base você quer converter?");
+			 
+			int bc = sc.nextInt();
+			
+			if(ba > bc) 
+			{
+			      sis.Divisao_sucessiva(s1, bc);
+			}
+			
+			sc.close();
 		
-		int n1 = sc.nextInt();
-		int n2 = sc.nextInt();
+		}
 		
-		System.out.println(Soma(n1,n2));
-		System.out.println(Mult(n1,n2));
-		
-		sc.close();
+	
+	
+} class SistemasNumericos  
+{
+
+	
+	
+	public void Notacao_posicional(int base1, int base2, double[] n, double result) 
+	{
+		//Ainda em planejamento
 	}
 	
-	public static int Soma(int n1, int n2) 
+	public void Divisao_sucessiva(int num,int base) 
 	{
-		return n1 + n2;
+		List<Integer> lista = new ArrayList<>();
+		double resto;
+		double temp = 1;
+		double temp2;
+		temp = num / base;
+		resto = num % base;
+		while(temp > 1) 
+		{
+			lista.add((int)resto);
+			temp = temp / base;
+			resto = temp % base;
+		    temp2 = temp;
+		    System.out.println(temp2);
+		    
+		    
+		}
+		
+		System.out.println(lista);
 	}
-
-	public static double Mult(int n1, int n2) 
-	{
-		return n1 * n2;
+	
 	}
-}
