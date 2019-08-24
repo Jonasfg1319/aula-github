@@ -52,6 +52,7 @@ public class MainClass {
 		double temp2;
 		temp = num / base;
 		resto = num % base;
+		System.out.println(temp);
 		while(temp > 1) 
 		{
 			lista.add((int)resto);
