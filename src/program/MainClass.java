@@ -28,6 +28,11 @@ public class MainClass {
 			      sis.Divisao_sucessiva(s1, bc);
 			}
 			
+			else if(bc > ba) 
+			{
+				sis.Notacao_posicional(ba, bc);
+			}
+			
 			sc.close();
 		
 		}
@@ -39,7 +44,7 @@ public class MainClass {
 
 	
 	
-	public void Notacao_posicional(int base1, int base2, double[] n, double result) 
+	public void Notacao_posicional(int base1, int base2) 
 	{
 		//Ainda em planejamento
 	}
