@@ -60,17 +60,11 @@ public class MainClass {
 	    		vect[i] = sc.nextInt();
 	    	}
 	    	
-	    	for(int i : vect) 
-	    	{
-	    		System.out.println(i);
-	    	}
+	    	System.out.println(" ");
 	    	
 	    	for(int j = alg-1; j > -1; j--) 
 	    	{
-	    		
-	    		System.out.print("valor do vect[i] atual: "+ vect[j]+" os outros valores: "+base1+" "+j);
 	    		mult = vect[x]*(Math.pow(base1, j));
-	    		
 	    		som += mult;
 	    		System.out.println(mult);
 	    		x++;
