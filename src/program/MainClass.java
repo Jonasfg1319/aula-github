@@ -93,13 +93,13 @@ public class MainClass {
 	    
 		while(temp > 1) 
 		{
-			lista.add((int)resto);
+		    lista.add((int)resto);
 			temp = temp / base;
 			resto = temp % base;
-		    temp2 = temp;
-		    System.out.println(temp2);
-		    
-		    
+			temp2 = temp;
+			System.out.println(temp2);
+			    
+			    
 		}
 		
 		System.out.println("O resultado do numero "+num+" convertido para base "+base+" é:");
