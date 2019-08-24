@@ -42,12 +42,44 @@ public class MainClass {
 } class SistemasNumericos  
 {
 
-	
+	Scanner sc = new Scanner(System.in);
 	
 	public void Notacao_posicional(int base1, int base2) 
 	{
 		//Ainda em planejamento
-	}
+		System.out.println("Quantos algarismos tem o numero?");
+		int alg = sc.nextInt();
+		System.out.println("Digite o numero que você quer converter um numero de cada vez");
+		int[] vect = new int[alg];
+	    double som = 0;
+	    double mult = 0;
+	    int x = 0;
+	    	for(int i = 0; i < vect.length; i++) 
+	    	{
+	    		System.out.println((i+1)+"# :"+" Numero?");
+	    		vect[i] = sc.nextInt();
+	    	}
+	    	
+	    	for(int i : vect) 
+	    	{
+	    		System.out.println(i);
+	    	}
+	    	
+	    	for(int j = alg-1; j > -1; j--) 
+	    	{
+	    		
+	    		System.out.print("valor do vect[i] atual: "+ vect[j]+" os outros valores: "+base1+" "+j);
+	    		mult = vect[x]*(Math.pow(base1, j));
+	    		
+	    		som += mult;
+	    		System.out.println(mult);
+	    		x++;
+	    		
+	    	}
+	    	System.out.println("O resultado é "+som);
+	        
+	    
+	   }
 	
 	public void Divisao_sucessiva(int num,int base) 
 	{
@@ -69,7 +101,14 @@ public class MainClass {
 		    
 		}
 		
-		System.out.println(lista);
+		System.out.println("O resultado do numero "+num+" convertido para base "+base+" é:");
+		
+		for( Integer i : lista)
+		{
+		    System.out.print(i);
+		}
+		
+		
 	}
 	
 	}
